@@ -1,4 +1,4 @@
-import AboutUS from '@/components/AboutUS';
+import AboutUS from '@/components/about-us/AboutUS';
 import Banner from '@/components/Banner';
 import React from 'react'
 
