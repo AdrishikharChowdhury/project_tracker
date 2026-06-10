@@ -11,7 +11,7 @@ const raleway = Raleway({
 
 
 export const metadata: Metadata = {
-  title: "Project Tracker",
+  title: "Loony Wolfie",
   description: "Track and Crack Projects in a Single Web App",
 };
 
