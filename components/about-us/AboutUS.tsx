@@ -9,7 +9,7 @@ const AboutUS = () => {
       className="min-h-screen flex justify-center items-center flex-col w-full bg-amber-900 px-5 py-24 gap-24"
       id="about-us"
     >
-      <div className="max-w-7xl w-full flex gap-16 items-center">
+      <div className="max-w-7xl w-full flex gap-20 items-center">
         <div className="max-w-3xl mx-auto text-center space-y-8 tracking-wider">
           <SectionHeader text="About" accent="US" />
           <div className="space-y-4 text-justify">
