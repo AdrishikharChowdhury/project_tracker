@@ -75,12 +75,13 @@ body {
   background: #f0ece2;
   box-shadow: inset 2px 2px 4px #b8b2a4, inset -1px -1px 3px #ffffff;
   transition: all 0.15s ease;
+  outline: none;
 }
 
 :where(input, textarea, select):focus {
-  @apply border-skeuo-accent outline-none;
   background: #f5f0e6;
-  box-shadow: inset 2px 2px 4px #b8b2a4, inset -1px -1px 3px #ffffff, 0 0 0 3px rgba(74, 144, 217, 0.2);
+  box-shadow: inset 2px 2px 4px #b8b2a4, inset -1px -1px 3px #ffffff;
+  outline: none;
 }
 
 :where(hr) {
