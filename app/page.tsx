@@ -1,6 +1,6 @@
 import AboutUS from '@/components/about-us/AboutUS';
 import Banner from '@/components/Banner';
-import ContactUs from '@/components/ContactUs';
+import ContactUs from '@/components/contact/ContactUs';
 import Reviews from '@/components/Reviews';
 
 const page = () => {
