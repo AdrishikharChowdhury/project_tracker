@@ -49,7 +49,7 @@ export default function ReviewList({ reviews }: ReviewListProps) {
       <div className="flex flex-col gap-6">
         <div
         className="animate-scroll-left flex"
-        style={{ "--scroll-speed": "15s" } as React.CSSProperties}
+        style={{ "--scroll-speed": "60s" } as React.CSSProperties}
       >
         {doubled.map((review, i) => (
           <ReviewCard key={`${review.id}-${i}`} review={review} />
@@ -58,7 +58,7 @@ export default function ReviewList({ reviews }: ReviewListProps) {
 
       <div
         className="animate-scroll-right flex"
-        style={{ "--scroll-speed": "15s" } as React.CSSProperties}
+        style={{ "--scroll-speed": "60s" } as React.CSSProperties}
       >
         {doubled.map((review, i) => (
           <ReviewCard key={`${review.id}-b-${i}`} review={review} />

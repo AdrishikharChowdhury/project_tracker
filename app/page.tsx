@@ -1,5 +1,6 @@
 import AboutUS from '@/components/about-us/AboutUS';
 import Banner from '@/components/Banner';
+import ContactUs from '@/components/ContactUs';
 import Reviews from '@/components/Reviews';
 
 const page = () => {
@@ -8,6 +9,7 @@ const page = () => {
       <Banner />
       <AboutUS />
       <Reviews />
+      <ContactUs />
     </main>
   )
 }

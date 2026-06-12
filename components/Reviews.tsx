@@ -20,7 +20,7 @@ export default function Reviews() {
 
   return (
     <div
-      className="w-full h-screen flex flex-col items-center py-20 px-4 justify-center"
+      className="w-full min-h-screen flex flex-col items-center py-20 px-4 justify-center"
       id="reviews"
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full h-full justify-center max-w-7xl items-center">
