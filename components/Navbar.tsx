@@ -1,4 +1,5 @@
 "use client"
+import { SignInButton, SignUpButton, Show, UserButton } from "@clerk/nextjs";
 import { navlinks } from "@/lib/constants";
 import React from "react";
 import Link from "next/link";
@@ -20,8 +21,23 @@ const Navbar = () => {
       ))}
       </ul>
       <div className="flex gap-6 items-center">
-        <Link href="/signin" className="bg-amber-800 text-white px-6 py-3 rounded-lg hover:bg-amber-900 transition-colors" >Sign In</Link>
-        <Link href="/signup" className="bg-amber-800 text-white px-6 py-3 rounded-lg hover:bg-amber-900 transition-colors" >Sign Up</Link>
+        <Show when="signed-out">
+          <SignInButton mode="redirect" forceRedirectUrl="/dashboard">
+            <button className="bg-amber-800 text-white px-6 py-3 rounded-lg hover:bg-amber-900 transition-colors font-semibold cursor-pointer">
+              Sign In
+            </button>
+          </SignInButton>
+          <SignUpButton mode="redirect" forceRedirectUrl="/dashboard">
+            <button className="bg-amber-800 text-white px-6 py-3 rounded-lg hover:bg-amber-900 transition-colors font-semibold cursor-pointer">
+              Sign Up
+            </button>
+          </SignUpButton>
+        </Show>
+        <Show when="signed-in">
+          <div className="scale-125">
+            <UserButton />
+          </div>
+        </Show>
       </div>
     </nav>
   );
