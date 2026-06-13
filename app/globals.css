@@ -68,30 +68,8 @@ body {
 }
 
 :where(button) {
-    @apply border border-skeuo-shadow rounded-lg font-semibold text-gray-700 cursor-pointer;
-    background: linear-gradient(145deg, #f5f0e6, #ddd8cc);
-    box-shadow:
-        2px 2px 4px #b8b2a4,
-        -2px -2px 4px #ffffff,
-        inset 0 1px 0 rgba(255, 255, 255, 0.6);
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    @apply  rounded-lg font-semibold cursor-pointer;
     transition: all 0.08s ease;
-}
-
-:where(button):hover {
-    background: linear-gradient(145deg, #eee9de, #d8d3c7);
-    box-shadow:
-        1px 1px 3px #b8b2a4,
-        -1px -1px 3px #ffffff,
-        inset 0 1px 0 rgba(255, 255, 255, 0.6);
-}
-
-:where(button):active {
-    background: linear-gradient(145deg, #ddd8cc, #f5f0e6);
-    box-shadow:
-        inset 2px 2px 4px #b8b2a4,
-        inset -2px -2px 4px #ffffff;
-    @apply translate-y-px;
 }
 
 :where(input, textarea, select) {

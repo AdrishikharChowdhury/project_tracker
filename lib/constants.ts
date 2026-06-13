@@ -277,3 +277,24 @@ export const aboutUsCard = [
       "We eat our own dog food — Loony Wolfie itself is built in the open. Our commit history is transparent, our roadmap is public, and we welcome contributions from the community. Because we believe the best tools emerge when builders collaborate openly.",
   },
 ];
+
+export const dashboardlinks = [{
+  name: "Dashboard",
+  href: "/dashboard",
+  icon: "LayoutDashboard",
+},
+{
+  name: "Projects",
+  href: "/dashboard/projects",
+  icon: "FolderKanban",
+},
+{
+  name: "Create Project",
+  href: "/dashboard/projects/create-project",
+  icon: "FilePlus",
+},
+{
+  name: "Project Planner",
+  href: "/dashboard/project-planner",
+  icon: "ClipboardList",
+}]

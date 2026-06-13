@@ -6,7 +6,7 @@ import { reviews as initialReviews, type Review } from "@/lib/constants";
 
 import ReviewForm, { type ReviewFormValues } from "./ReviewForm";
 import ReviewList from "./ReviewList";
-import SectionHeader from "./SectionHeader";
+import SectionHeader from "../SectionHeader";
 
 export default function Reviews() {
   const [reviews, setReviews] = useState<Review[]>(initialReviews);

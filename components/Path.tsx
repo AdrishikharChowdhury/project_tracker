@@ -7,5 +7,5 @@ interface PathProps {
 
 export function Path({ component }: PathProps) {
   const pathname = usePathname();
-  return <>{pathname.includes("dashboard") ? "" : {component}}</>;
+  return <>{pathname.includes("dashboard") ? null : component}</>;
 }
